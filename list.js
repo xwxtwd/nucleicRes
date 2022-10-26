@@ -12,10 +12,10 @@ hostname = sk.gzonline.gov.cn
 **************************/
 
 
-function padding(num, length) {
-    //这里用slice和substr均可
-    return (Array(length).join("0") + num).slice(-length);
-}
+// function padding(num, length) {
+//     //这里用slice和substr均可
+//     return (Array(length).join("0") + num).slice(-length);
+// }
 console.log(1111, $response)
 
 let body = $response.body;
