@@ -10,7 +10,7 @@ hostname = sk.gzonline.gov.cn
 
 
 **************************/
-console.log(1111, $response.body)
+console.log(1111, $response)
 if ($response.body) {
     nowDate = new Date();
     function padding(num, length) {
