@@ -15,7 +15,7 @@ let body = $response.body;
 
 if (body) {
     console.log(3333)
-    try {
+
         nowDate = new Date();
         function padding(num, length) {
             //这里用slice和substr均可
@@ -43,10 +43,7 @@ if (body) {
         } else {
             // $done({});
         }
-    } catch(e) {
-        console.log(e)
-    }
-    
+  
 
 } else {
     console.log(666)
