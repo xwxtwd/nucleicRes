@@ -4,7 +4,7 @@
 QuantumultX:
 
 [rewrite_local]
-https:\/\/sk\.gzonline\.gov\.cn\/prominent-citizens\/nucleicAcid\/v1\/result.*
+^https?:\/\/sk\.gzonline\.gov\.cn\/prominent-citizens\/nucleicAcid\/v1\/result.*
 [mitm]
 hostname = sk.gzonline.gov.cn
 
