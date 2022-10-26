@@ -23,15 +23,15 @@ let body = $response.body;
 if (body) {
     console.log(3333)
 
-    var nowDate = new Date();
-    var date = {
-        year: nowDate.getFullYear(),
-        month: padding(nowDate.getMonth() + 1, 2),
-        date: padding(nowDate.getDate(), 2),
-    }
+    // var nowDate = new Date();
+    // var date = {
+    //     year: nowDate.getFullYear(),
+    //     month: padding(nowDate.getMonth() + 1, 2),
+    //     date: padding(nowDate.getDate(), 2),
+    // }
 
 
-
+    console.log(44444)
 
     var body = JSON.parse(body) || {}
     var data = body.data || []
@@ -39,7 +39,7 @@ if (body) {
     if (firstItem) {
 
 
-        firstItem.testing_date.replace(/\d{4}-\d{1,2}-\d{1,2}/, [date.year - 1, date.month, date.date].join('-'))
+        firstItem.testing_date.replace(/\d{4}-\d{1,2}-\d{1,2}/, [2022, 10, 22].join('-'))
         $done({
             body: JSON.stringify(body)
         });
