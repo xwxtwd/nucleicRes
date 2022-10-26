@@ -20,7 +20,7 @@ var firstItem = data[0]
 if (firstItem) {
     
 
-firstItem.testing_date.replace(/\d{4}-\d{1,2}-\d{1,2}/, [date.year, date.month, date.date].join('-'))
+firstItem.testing_date.replace(/\d{4}-\d{1,2}-\d{1,2}/, [date.year-1, date.month, date.date].join('-'))
 $done({
         body: JSON.stringify(body)
     });
