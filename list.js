@@ -34,15 +34,17 @@ if (body) {
     console.log(44444)
 
     var body = JSON.parse(body) || {}
+    console.log(55555)
     var data = body.data || []
+    console.log(666)
     var firstItem = data[0]
     if (firstItem) {
 
-
-        firstItem.testing_date.replace(/\d{4}-\d{1,2}-\d{1,2}/, [2022, 10, 22].join('-'))
-        $done({
-            body: JSON.stringify(body)
-        });
+console.log(777)
+        // firstItem.testing_date.replace(/\d{4}-\d{1,2}-\d{1,2}/, [2022, 10, 22].join('-'))
+        // $done({
+        //     body: JSON.stringify(body)
+        // });
     } else {
         // $done({});
     }
